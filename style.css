@@ -89,7 +89,48 @@ header {
 }
 
 .header-center .menu-list i {
-    font-size: 12px;
+  font-size: 12px;
+}
 
-  } 
+.header-right .header-right-links{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.header-right .bi-person{
+    font-size: 23px;
+}
+
+.header-right .toggle-button{
+    border: none;
+    background-color: transparent;
+}
+
+.header-right  i{
+    font-size: 18px;
+    display: flex;
+}
+
+.header-right .header-cart{
+    position: relative;
+}
+
+.header-right .header-cart-link  .header-cart-count{
+    width: 16px;
+    height: 16px;
+    background-color: #1367ef;
+    color: white;
+    font-size: 10px;
+    border-radius: 100%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+
 /*! header end  */
