@@ -81,56 +81,80 @@ header {
   align-items: center;
 }
 
+.header-center .menu-list .menu-list-item {
+  display: flex;
+}
+
 .header-center .menu-list .menu-link {
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+  position: relative;
+}
+
+.header-center .menu-list .menu-link::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #1367ef;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.2s ease width;
+}
+
+.header-center .menu-list .menu-list-item:hover .menu-link::after {
+  width: 100%;
+}
+
+.header-center .menu-list .menu-link.active::after {
+  width: 100%;
 }
 
 .header-center .menu-list i {
   font-size: 12px;
 }
 
-.header-right .header-right-links{
-    display: flex;
-    align-items: center;
-    column-gap: 16px;
+.header-right .header-right-links {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
 }
 
-.header-right .bi-person{
-    font-size: 23px;
+.header-right .bi-person {
+  font-size: 23px;
 }
 
-.header-right .toggle-button{
-    border: none;
-    background-color: transparent;
+.header-right .toggle-button {
+  border: none;
+  background-color: transparent;
 }
 
-.header-right  i{
-    font-size: 18px;
-    display: flex;
+.header-right i {
+  font-size: 18px;
+  display: flex;
 }
 
-.header-right .header-cart{
-    position: relative;
+.header-right .header-cart {
+  position: relative;
 }
 
-.header-right .header-cart-link  .header-cart-count{
-    width: 16px;
-    height: 16px;
-    background-color: #1367ef;
-    color: white;
-    font-size: 10px;
-    border-radius: 100%;
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
+.header-right .header-cart-link .header-cart-count {
+  width: 16px;
+  height: 16px;
+  background-color: #1367ef;
+  color: white;
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
 }
-
 
 /*! header end  */
