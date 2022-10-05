@@ -1,0 +1,13 @@
+.slider-item{
+    position: relative;
+    height: calc(100vh - 137px);
+}
+
+.slider-item .slider-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60%;
+}
