@@ -36,6 +36,67 @@ p {
   margin: 0 auto;
 }
 
+.logo {
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+}
+
+button{
+  margin-top: 20px; 
+  cursor: pointer;
+  border: none;
+}
+
+.btn{
+  display: inline-block;
+  padding: 0 25px;
+  line-height: 40px;
+  font-weight: 500;
+  border: 1px solid black;
+  transition: .2s ease all;
+}
+
+.btn-sm{
+  line-height: 33px;
+}
+
+.btn-lg{
+  line-height: 45px;
+}
+
+.btn-primary{
+  background-color: #1367ef;
+  color: #fff;
+  border-color: #1367ef;
+}
+
+.btn-primary:hover{
+  background-color: #fff;
+  color: #1367ef;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"]{
+  outline: none;
+  border: 1px solid #dee0ea;
+  padding: 8px 8px 8px 15px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus{
+  border-color: gray;
+}
+
+input[type="number"]::-webkit-inner-spin-button{
+  opacity: 1;
+}
+
+
 /*! base end  */
 
 /*! header start  */
@@ -68,12 +129,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.header-left .logo {
-  font-size: 24px;
-  font-weight: 500;
-  display: flex;
 }
 
 .header-center .navigation .menu-list {
@@ -251,9 +306,6 @@ header .menu-dropdown-content a:hover {
 .megamenu-wrapper .megamenu-single-button{
   margin-top: 5px;
 }
-
-
-
 
 /*? menu dropdown end  */
 
