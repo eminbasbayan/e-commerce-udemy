@@ -161,7 +161,7 @@
                           </a>
                           <h3 class="megamenu-single-title">JOIN THE LAYERING GANG</h3>
                           <h4 class="megamenu-single-subtitle">Suspendisse faucibus nunc et pellentesque</h4>
-                          <a href="#" class="megamenu-single-button">Shop Now</a>
+                          <a href="#" class="megamenu-single-button btn btn-sm">Shop Now</a>
                         </div>
                       </div>
                     </div>
@@ -206,22 +206,37 @@
     </header>
     <!--! header end  -->
 
-    <div class="container">
-      <button class="btn btn-primary btn-lg">Deneme Butonu</button>
-      <br>
-      <br>
-      <br>
-      <input type="text" placeholder="Search a product">
-      <br>
-      <br>
-      <input type="password" placeholder="Search a product">
-      <br>
-      <br>
-      <input type="email" placeholder="Search a product">
-      <br>
-      <br>
-      <input type="number" placeholder="Search a product">
-    </div>
+    <!--! modal search start  -->
+      <div class="modal-search">
+        <div class="modal-wrapper">
+          <h3 class="modal-title">Search for products</h3>
+          <p class="modal-text">Start typing to see products you are looking for.</p>
+          <form class="search-form">
+            <input type="text" placeholder="Search a product">
+            <button>
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+          <div class="search-results">
+            <div class="search-heading">
+              <h3>RESULTS FROM PRODUCT</h3>
+            </div>
+            <div class="results">
+              <a href="#" class="result-item">
+                <img src="img/products/product1/1.png" class="search-thumb" alt="">
+                <div class="search-info">
+                  <h4>Analogue Resin Strap</h4>
+                  <span class="search-sku">SKU: PD0016</span>
+                  <span class="search-rice">$108.00</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <i class="bi bi-x-circle"></i>
+        </div>
+      </div>
+    <!--! modal search end  -->
+
     </div>
   </body>
 </html>
