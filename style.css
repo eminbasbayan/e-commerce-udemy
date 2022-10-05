@@ -318,6 +318,8 @@ header .menu-dropdown-content a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
+
 }
 
 .modal-search::after {
@@ -454,3 +456,22 @@ header .menu-dropdown-content a:hover {
 }
 
 /*! modal search end  */
+
+@media (max-width: 1200px){
+  .container{
+    max-width: 992px;
+  }
+}
+
+
+@media (max-width: 992px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px){
+  .container{
+    max-width: 576px;
+  }
+}
