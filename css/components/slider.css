@@ -1,6 +1,8 @@
 .slider-item{
     position: relative;
     height: calc(100vh - 137px);
+    display: flex;
+    align-items: center;
 }
 
 .slider-item .slider-image img{
@@ -10,4 +12,16 @@
     height: 100%;
     object-fit: cover;
     object-position: 60%;
+    z-index: -1;
+}
+
+
+.slider-item .slider-title{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.slider-item .slider-heading{
+    font-size: 60px;
+    font-weight: 600;
 }
