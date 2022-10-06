@@ -29,6 +29,11 @@
   font-weight: 600;
 }
 
+.slider-item a {
+  position: relative;
+  z-index: 1;
+}
+
 .slider .slider-buttons {
   position: absolute;
   top: 0;
