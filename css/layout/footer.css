@@ -1,0 +1,73 @@
+.footer .subscribe-row {
+  background-color: #000;
+  color: white;
+  padding: 80px 0;
+}
+
+.footer .footer-row-wrapper {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 200px;
+}
+
+.footer .subscribe-title,
+.footer .contact-title {
+  font-size: 30px;
+  max-width: 500px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.footer .subscribe-desc,
+.footer .contact-desc {
+  font-size: 14px;
+  opacity: 0.6;
+  margin-top: 4px;
+}
+
+.footer .footer-subscribe-bottom,
+.footer .footer-contact-bottom {
+  margin-top: 40px;
+}
+
+.footer .footer-subscribe-bottom form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer .footer-subscribe-bottom form > input {
+  flex: 1;
+  height: 48px;
+  border: none;
+}
+
+.footer .footer-subscribe-bottom form > button {
+  height: 48px !important;
+  border-color: #fff;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer .privacy-text,
+.footer .privacy-text a {
+  font-size: 10px;
+  color: #75767c;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.footer .footer-contact-bottom .download-app {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+/*! responsive  */
+
+@media (max-width: 768px) {
+  .footer .footer-row-wrapper {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}

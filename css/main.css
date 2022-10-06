@@ -3,6 +3,7 @@
 
 /*! layout  */
 @import url(layout/header.css);
+@import url(layout/footer.css);
 
 /*! components  */
 @import url(components/modal-search.css);
