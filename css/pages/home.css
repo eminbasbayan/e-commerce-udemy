@@ -38,7 +38,7 @@
 .campaigns .campaigns-wrapper {
   display: flex;
   gap: 30px;
-  margin: 30px;
+  margin: 30px 0;
   flex-wrap: wrap;
 }
 /*! campaign end  */
@@ -56,28 +56,27 @@
 /*! blogs end  */
 
 /*! brands start  */
-  .brands{
-    margin: 40px 0;
-  }
+.brands {
+  margin: 40px 0;
+}
 
-  .brand-list{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border: 1px solid #dee0ea;
-    padding: 30px 5px;
-  }
+.brand-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid #dee0ea;
+  padding: 30px 5px;
+}
 
-  .brand-list .brand-item{
-    opacity: 0.4;
-    transition: .2s ease opacity;
-  }
+.brand-list .brand-item {
+  opacity: 0.4;
+  transition: 0.2s ease opacity;
+}
 
-  .brand-list .brand-item:hover{
-    opacity: 1;
-  }
+.brand-list .brand-item:hover {
+  opacity: 1;
+}
 /*! brands end  */
-
 
 /* responsive  */
 

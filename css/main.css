@@ -11,6 +11,7 @@
 @import url(components/product-item.css);
 @import url(components/campaign-item.css);
 @import url(components/blog-item.css);
+@import url(components/campaign-single.css);
 
 /*! pages  */
 @import url(pages/home.css);
