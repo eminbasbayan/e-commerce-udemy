@@ -42,3 +42,23 @@
   flex-wrap: wrap;
 }
 /*! campaign end  */
+
+/*! blogs start  */
+.blogs {
+  margin-bottom: 30px;
+}
+
+.blogs .blog-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+/*! blogs end  */
+
+/*! responsive  */
+
+@media (max-width: 768px) {
+  .blogs .blog-list {
+    grid-template-columns: 1fr;
+  }
+}
