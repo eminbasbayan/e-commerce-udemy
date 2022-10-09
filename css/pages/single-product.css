@@ -1,5 +1,7 @@
-/*! topbar start  */
 .single-topbar {
   margin-top: 30px;
 }
-/*! topbar end  */
+
+.single-content {
+  margin: 30px 0;
+}
