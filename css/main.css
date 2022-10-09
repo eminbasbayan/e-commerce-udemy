@@ -13,9 +13,11 @@
 @import url(components/campaign-item.css);
 @import url(components/blog-item.css);
 @import url(components/campaign-single.css);
+@import url(components/single-product/breadcrumb.css);
 
 /*! pages  */
 @import url(pages/home.css);
 @import url(pages/contact.css);
 @import url(pages/account.css);
 @import url(pages/cart.css);
+@import url(pages/single-product.css);
