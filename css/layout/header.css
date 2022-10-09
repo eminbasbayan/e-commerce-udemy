@@ -134,6 +134,7 @@ header .menu-dropdown-wrapper {
   visibility: hidden;
   transition: all 0.2s ease;
   z-index: 1;
+  display: none !important;
 }
 
 header .menu-dropdown-content {
