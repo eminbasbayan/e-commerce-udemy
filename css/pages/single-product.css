@@ -28,9 +28,7 @@
   }
 
   .site-main .values-list span {
-    flex: 1;
     padding: 6px !important;
-    text-align: center;
     display: inline-block;
   }
 }

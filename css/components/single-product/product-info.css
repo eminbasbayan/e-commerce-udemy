@@ -138,6 +138,8 @@
   border: 1px solid #dee0ea;
   font-size: 14px;
   cursor: pointer;
+  flex: 1;
+  text-align: center;
   transition: 0.2s ease all;
 }
 
