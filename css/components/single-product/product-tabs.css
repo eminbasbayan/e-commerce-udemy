@@ -1,0 +1,15 @@
+.single-tabs {
+  margin-bottom: 30px;
+}
+
+.single-tabs .tab-list {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  border-bottom: 1px solid #dee0ea;
+  padding-bottom: 20px;
+}
+
+.single-tabs .tab-list a.active {
+  font-weight: 500;
+}
