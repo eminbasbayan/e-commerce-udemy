@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>E-Commerce</title>
+  <!--! Glide.js Css CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css">
   <!--! Boostrap Icons CDN  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="css/main.css" />
@@ -303,6 +305,22 @@
     </div>
   </section>
   <!--! slider end   -->
+
+  <div class="container">
+    <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">0</li>
+          <li class="glide__slide">1</li>
+          <li class="glide__slide">2</li>
+        </ul>
+      </div>
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+      </div>
+    </div>
+  </div>
 
 
   <!--! categories start  -->
@@ -933,6 +951,7 @@
   </section>
   <!--! campaign single end  -->
 
+
   <!--! policy start  -->
   <section class="policy">
     <div class="container">
@@ -1151,6 +1170,8 @@
   <!--! footer end  -->
 
   <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="js/glide.js"></script>
 </body>
 
 </html>
