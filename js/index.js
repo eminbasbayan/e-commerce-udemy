@@ -10,4 +10,15 @@ btnCloseSidebar.addEventListener("click", function () {
   sidebar.style.left = "-100%";
 });
 
+/* click outside start */
+document.addEventListener("click", function (event) {
+  if (
+    !event.composedPath().includes(sidebar) &&
+    !event.composedPath().includes(btnOpenSidebar)
+  ) {
+    sidebar.style.left = "-100%";
+  }
+});
+/* click outside end */
+
 //! home sidebar end
