@@ -251,9 +251,29 @@
   <!--! slider start   -->
   <section class="slider">
     <div class="slider-elements">
-      <div class="slider-item">
+      <div class="slider-item fade">
         <div class="slider-image">
-          <img src="img/slider/slider1.png" class="img-fluid" alt="">
+          <img src="img/slider/slider1.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="container">
+          <p class="slider-title">SUMMER 2022</p>
+          <h2 class="slider-heading">Save up to 70%</h2>
+          <a href="#" class="btn btn-lg btn-primary">Explore Now</a>
+        </div>
+      </div>
+      <div class="slider-item fade">
+        <div class="slider-image">
+          <img src="img/slider/slider2.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="container">
+          <p class="slider-title">SUMMER 2022</p>
+          <h2 class="slider-heading">Save up to 70%</h2>
+          <a href="#" class="btn btn-lg btn-primary">Explore Now</a>
+        </div>
+      </div>
+      <div class="slider-item fade">
+        <div class="slider-image">
+          <img src="img/slider/slider3.jpg" class="img-fluid" alt="">
         </div>
         <div class="container">
           <p class="slider-title">SUMMER 2022</p>
@@ -262,22 +282,21 @@
         </div>
       </div>
       <div class="slider-buttons">
-        <button>
+        <button onclick="plusSlide(-1)">
           <i class="bi bi-chevron-left"></i>
         </button>
-        <button>
+        <button onclick="plusSlide(1)">
           <i class="bi bi-chevron-right"></i>
         </button>
       </div>
-
       <div class="slider-dots">
-        <button class="slider-dot">
+        <button class="slider-dot active" onclick="currentSlide(1)">
           <span></span>
         </button>
-        <button class="slider-dot">
+        <button class="slider-dot" onclick="currentSlide(2)">
           <span></span>
         </button>
-        <button class="slider-dot">
+        <button class="slider-dot" onclick="currentSlide(3)">
           <span></span>
         </button>
       </div>
