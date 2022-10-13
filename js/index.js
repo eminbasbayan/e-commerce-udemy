@@ -98,14 +98,15 @@ function showSlides(n) {
 
 //! slider end
 
-//! localStorage setItem
-const fruits = ["elma", "armut", "şeftali"];
-const fullName = "Emin Başbayan";
-localStorage.setItem("fullName", JSON.stringify(fullName));
-localStorage.setItem("meyveler", JSON.stringify(fruits));
+//! add product to localStorage
+async function getData() {
+  const photos = await fetch("../js/data.json");
+  const data = await photos.json();
 
-//! localStorage getItem
-const getData = JSON.parse(localStorage.getItem("fullName"));
-const getData2 = JSON.parse(localStorage.getItem("meyveler"));
-console.log(getData);
-console.log(getData2);
+  data ? localStorage.setItem("products", JSON.stringify(data)) : [];
+}
+
+getData();
+
+const products = localStorage.getItem("products");
+console.log(JSON.parse(products));
