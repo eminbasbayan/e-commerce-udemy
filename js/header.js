@@ -1,27 +1,66 @@
-/* export function header() {
-  const a = 5;
-  const b = 10;
+function sidebarFunc() {
+  //! home sidebar start
+  const btnOpenSidebar = document.querySelector("#btn-menu");
+  const sidebar = document.querySelector("#sidebar");
+  const btnCloseSidebar = document.querySelector("#close-sidebar");
+  btnOpenSidebar.addEventListener("click", function () {
+    sidebar.style.left = "0";
+  });
 
-  const toplam = a + b;
+  btnCloseSidebar.addEventListener("click", function () {
+    sidebar.style.left = "-100%";
+  });
 
-  console.log(toplam);
+  /* click outside start */
+  document.addEventListener("click", function (event) {
+    if (
+      !event.composedPath().includes(sidebar) &&
+      !event.composedPath().includes(btnOpenSidebar)
+    ) {
+      sidebar.style.left = "-100%";
+    }
+  });
+  /* click outside end */
+
+  //! home sidebar end
 }
 
-export function footer() {
-  const a = 20;
-  const b = 15;
+function searchModalFunc() {
+  //! search modal start
+  const btnOpenSearch = document.querySelector(".search-button");
+  const btnCloseSearch = document.getElementById("close-search");
+  const modalSearch = document.getElementsByClassName("modal-search");
+  const modalSearchWrapper = document.getElementsByClassName("modal-wrapper");
 
-  const toplam = a + b;
+  btnOpenSearch.addEventListener("click", function () {
+    modalSearch[0].style.visibility = "visible";
+    modalSearch[0].style.opacity = "1";
+  });
 
-  console.log(toplam);
+  btnCloseSearch.addEventListener("click", function () {
+    modalSearch[0].style.visibility = "hidden";
+    modalSearch[0].style.opacity = "0";
+  });
+
+  /* click outside start */
+  document.addEventListener("click", function (e) {
+    if (
+      !e.composedPath().includes(modalSearchWrapper[0]) &&
+      !e.composedPath().includes(btnOpenSearch)
+    ) {
+      modalSearch[0].style.visibility = "hidden";
+      modalSearch[0].style.opacity = "0";
+    }
+  });
+
+  /* click outside end */
+
+  //! search modal end
 }
- */
 
-export default function () {
-  const a = 5;
-  const b = 10;
-
-  const toplam = a + b;
-
-  console.log(toplam);
+function headerFunc() {
+  sidebarFunc();
+  searchModalFunc();
 }
+
+export default headerFunc();
