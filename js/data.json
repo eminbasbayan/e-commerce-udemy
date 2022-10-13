@@ -20,8 +20,8 @@
         "id": 2,
         "name": "Ridley High Waist",
         "price": {
-            "oldPrice": 165.00,
-            "newPrice": 208.00
+            "oldPrice": 208.00,
+            "newPrice": 100
         },
         "discount": 33,
         "img": {

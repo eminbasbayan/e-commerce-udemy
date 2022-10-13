@@ -12,8 +12,8 @@
 }
 
 .single-product .gallery-thumbs {
-  display: flex;
-  column-gap: 10px;
+  /*   display: flex;
+  column-gap: 10px; */
 }
 
 .single-product .gallery-thumbs li {
@@ -31,4 +31,24 @@
 
 .single-product .gallery-thumbs li img:hover {
   border-color: #000;
+}
+
+.single-product .product-thumb {
+  position: relative;
+}
+
+.single-product .glide__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.single-product .glide__arrow--left {
+  left: 0;
+}
+
+.single-product .glide__arrow--right {
+  right: 0;
 }
