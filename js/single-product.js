@@ -1,5 +1,6 @@
 import { thumbsActiveFunc } from "./single-product/thumbsActive.js";
 import { singleThumbs } from "./glide.js";
+import zoomFunc from "./single-product/zoom.js";
 
 const productId = localStorage.getItem("productId")
   ? JSON.parse(localStorage.getItem("productId"))
