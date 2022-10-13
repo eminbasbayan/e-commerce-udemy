@@ -109,4 +109,12 @@ async function getData() {
 getData();
 
 const products = localStorage.getItem("products");
-console.log(JSON.parse(products));
+
+/* import { header, footer } from "./header.js";
+
+header();
+footer(); */
+
+import Header from "./header.js";
+
+Header();
