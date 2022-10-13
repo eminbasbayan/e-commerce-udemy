@@ -1,4 +1,6 @@
-import { cart } from "./products.js";
+let cart = localStorage.getItem("cart")
+  ? JSON.parse(localStorage.getItem("cart"))
+  : [];
 
 function displayCartProduct() {
   const cartWrapper = document.querySelector(".cart-wrapper");
@@ -9,7 +11,7 @@ function displayCartProduct() {
     <td></td>
     <td class="cart-image">
         <img src=${item.img.singleImage} alt="">
-        <i class="bi bi-x delete-cart"></i>
+        <i class="bi bi-x delete-cart" data-id=${item.id}></i>
     </td>
     <td>${item.name}</td>
     <td>$${item.price.newPrice}</td>
@@ -19,6 +21,22 @@ function displayCartProduct() {
    `;
   });
   cartWrapper.innerHTML = result;
+  removeCartItem();
 }
 
 displayCartProduct();
+
+function removeCartItem() {
+  const btnDeleteCart = document.querySelectorAll(".delete-cart");
+  let cartItems = document.querySelector(".header-cart-count");
+
+  btnDeleteCart.forEach((button) => {
+    button.addEventListener("click", function (e) {
+      const id = e.target.dataset.id;
+      cart = cart.filter((item) => item.id !== Number(id));
+      displayCartProduct();
+      localStorage.setItem("cart", JSON.stringify(cart));
+      cartItems.innerHTML = cart.length;
+    });
+  });
+}
