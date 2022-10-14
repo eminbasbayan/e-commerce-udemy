@@ -1,9 +1,9 @@
 function tabsFunc() {
   const btnTab = document.querySelectorAll(".tab-button");
   const contentDOM = document.querySelectorAll(".content");
-  const tabsWrapperDOM = document.querySelector(".single-tabs");
+  const tabsButtons = document.querySelector(".tab-list");
 
-  tabsWrapperDOM.addEventListener("click", function (e) {
+  tabsButtons.addEventListener("click", function (e) {
     e.preventDefault();
     const id = e.target.dataset.id;
     if (id) {
