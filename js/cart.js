@@ -16,7 +16,7 @@ function displayCartProduct() {
     <td>${item.name}</td>
     <td>$${item.price.newPrice.toFixed(2)}</td>
     <td class="product-quantity">${item.quantity}</td>
-    <td class="product-subtotal">${(
+    <td class="product-subtotal">$${(
       item.price.newPrice * item.quantity
     ).toFixed(2)}</td>
    </tr>

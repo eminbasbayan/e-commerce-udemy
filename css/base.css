@@ -51,6 +51,11 @@ button {
   border: none;
 }
 
+button:disabled {
+  opacity: 0.4 !important;
+  cursor: no-drop;
+}
+
 .btn {
   display: inline-block;
   padding: 0 25px;

@@ -14,19 +14,19 @@ const products = localStorage.getItem("products")
 
 const findProduct = products.find((item) => item.id === Number(productId));
 
-/* product title */
+//! product title
 const productTitle = document.querySelector(".product-title");
 
 productTitle.innerHTML = findProduct.name;
 
-/* product price */
+//! product price
 const newPriceDOM = document.querySelector(".new-price");
 const oldPriceDOM = document.querySelector(".old-price");
 
-newPriceDOM.innerHTML = findProduct.price.newPrice.toFixed(2);
-oldPriceDOM.innerHTML = findProduct.price.oldPrice.toFixed(2);
+newPriceDOM.innerHTML = `$${findProduct.price.newPrice.toFixed(2)}`;
+oldPriceDOM.innerHTML = `$${findProduct.price.oldPrice.toFixed(2)}`;
 
-/* product gallery */
+//! product gallery
 
 const singleImageDOM = document.querySelector("#single-image");
 
@@ -52,4 +52,23 @@ const productThumbs = document.querySelectorAll(
 
 productThumbs[0].classList.add("active");
 
-console.log(productThumbs);
+//! add to cart
+let cart = localStorage.getItem("cart")
+  ? JSON.parse(localStorage.getItem("cart"))
+  : [];
+
+const findCart = cart.find((item) => item.id === findProduct.id);
+const btnAddToCart = document.getElementById("add-to-cart");
+const quantityDOM = document.getElementById("quantity");
+let cartItems = document.querySelector(".header-cart-count");
+
+if (findCart) {
+  btnAddToCart.setAttribute("disabled", "disabled");
+} else {
+  btnAddToCart.addEventListener("click", function () {
+    cart.push({ ...findProduct, quantity: Number(quantityDOM.value) });
+    btnAddToCart.setAttribute("disabled", "disabled");
+    localStorage.setItem("cart", JSON.stringify(cart));
+    cartItems.innerHTML = cart.length;
+  });
+}

@@ -168,6 +168,12 @@
   width: 100%;
 }
 
+.site-main .cart-button button:disabled {
+  background-color: #1367ef;
+  color: #fff;
+  border-color: #1367ef;
+}
+
 .site-main .product-extra-buttons {
   display: flex;
   align-items: center;
