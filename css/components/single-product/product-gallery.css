@@ -43,6 +43,7 @@
 
 .single-product .product-thumb {
   position: relative;
+  margin-top: 7px;
 }
 
 .single-product .glide__arrow {

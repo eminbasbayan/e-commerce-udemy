@@ -1,6 +1,8 @@
 import { thumbsActiveFunc } from "./single-product/thumbsActive.js";
 import { singleThumbs } from "./glide.js";
 import zoomFunc from "./single-product/zoom.js";
+import colorsFunc from "./single-product/colors.js";
+import valuesFunc from "./single-product/values.js";
 
 const productId = localStorage.getItem("productId")
   ? JSON.parse(localStorage.getItem("productId"))
@@ -43,3 +45,11 @@ findProduct.img.thumbs.forEach((item) => {
 galleryThumbs.innerHTML = result;
 singleThumbs();
 thumbsActiveFunc();
+
+const productThumbs = document.querySelectorAll(
+  ".product-thumb .glide__slide img"
+);
+
+productThumbs[0].classList.add("active");
+
+console.log(productThumbs);
