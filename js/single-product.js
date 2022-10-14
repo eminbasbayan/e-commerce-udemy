@@ -4,6 +4,7 @@ import zoomFunc from "./single-product/zoom.js";
 import colorsFunc from "./single-product/colors.js";
 import valuesFunc from "./single-product/values.js";
 import tabsFunc from "./single-product/tabs.js";
+import commentsFunc from "./single-product/comments.js";
 
 const productId = localStorage.getItem("productId")
   ? JSON.parse(localStorage.getItem("productId"))
