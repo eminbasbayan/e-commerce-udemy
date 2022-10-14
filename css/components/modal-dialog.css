@@ -9,8 +9,13 @@
   align-items: center;
   z-index: 999;
   transition: 0.3s ease all;
-  /*   visibility: hidden;
-  opacity: 0; */
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-dialog.show {
+  visibility: visible !important;
+  opacity: 1;
 }
 
 .modal-dialog::after {
