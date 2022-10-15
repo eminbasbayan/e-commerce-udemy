@@ -2,7 +2,11 @@
 
 header {
   border-bottom: 1px solid #dee0ea;
-  position: relative;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  z-index: 10;
 }
 
 .global-notification {
