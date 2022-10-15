@@ -27,16 +27,16 @@
             <div class="container">
                 <div class="header-wrapper">
                     <div class="header-mobile">
-                        <i class="bi bi-list"></i>
+                        <i class="bi bi-list" id="btn-menu"></i>
                     </div>
                     <div class="header-left">
-                        <a href="#" class="logo">LOGO</a>
+                        <a href="index.html" class="logo">LOGO</a>
                     </div>
-                    <div class="header-center">
+                    <div class="header-center" id="sidebar">
                         <nav class="navigation">
                             <ul class="menu-list">
                                 <li class="menu-list-item">
-                                    <a href="index.html" class="menu-link active">
+                                    <a href="index.html" class="menu-link">
                                         Home
                                         <i class="bi bi-chevron-down"></i>
                                     </a>
@@ -172,7 +172,7 @@
                                     </div>
                                 </li>
                                 <li class="menu-list-item">
-                                    <a href="blog.html" class="menu-link">
+                                    <a href="blog.html" class="menu-link active">
                                         Blog
                                     </a>
                                 </li>
@@ -183,21 +183,21 @@
                                 </li>
                             </ul>
                         </nav>
-                        <i class="bi-x-circle"></i>
+                        <i class="bi-x-circle" id="close-sidebar"></i>
                     </div>
                     <div class="header-right">
                         <div class="header-right-links">
-                            <a href="#" class="header-account">
+                            <a href="account.html" class="header-account">
                                 <i class="bi bi-person"></i>
                             </a>
-                            <button class="toggle-button">
+                            <button class="search-button">
                                 <i class="bi bi-search"></i>
                             </button>
                             <a href="#">
                                 <i class="bi bi-heart"></i>
                             </a>
                             <div class="header-cart">
-                                <a href="#" class="header-cart-link">
+                                <a href="cart.html" class="header-cart-link">
                                     <i class="bi bi-bag"></i>
                                     <span class="header-cart-count">0</span>
                                 </a>
@@ -244,10 +244,42 @@
                     </a>
                 </div>
             </div>
-            <i class="bi bi-x-circle"></i>
+            <i class="bi bi-x-circle" id="close-search"></i>
         </div>
     </div>
     <!--! modal search end  -->
+
+    <!--! modal dialog start  -->
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="bi bi-x"></i>
+            </button>
+            <div class="modal-image">
+                <img src="img/modal-dialog.jpg" alt="">
+            </div>
+            <div class="popup-wrapper">
+                <div class="popup-content">
+                    <div class="popup-title">
+                        <h3>NEWSLETTER</h3>
+                    </div>
+                    <p class="popup-text">
+                        Sign up to our newsletter and get exclusive deals you won find any where else straight to your
+                        inbox!
+                    </p>
+                    <form class="popup-form">
+                        <input type="text" placeholder="Enter Email Address Here">
+                        <button class="btn btn-primary">SUBSCRIBE</button>
+                        <label>
+                            <input type="checkbox">
+                            <span>Don't show this popup again</span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! modal dialog end  -->
 
     <!--! blogs start  -->
     <section class="blogs blog-page">
@@ -591,6 +623,9 @@
         </div>
     </footer>
     <!--! footer end  -->
+
+    <!-- javascript  -->
+    <script src="js/main.js" type="module"></script>
 </body>
 
 </html>
